@@ -14,6 +14,9 @@ function deleteToDo(event) {
     const li = event.target.parentElement;
     console.log(li.id);
     li.remove();
+    toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+    //toDos의 필터를 낀다. = function(toDo){toDo.id !== li.id}
+    saveToDos()
 }
 
 function paintToDo(newTodo){
