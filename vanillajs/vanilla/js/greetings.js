@@ -15,7 +15,7 @@ function onLoginSubmit(tomato) {
 function paintGreeting(){
     const username = localStorage.getItem(USERNAME_KEY)
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerText = "Hello " + saveUsername;
+    greeting.innerText = "Hello " + saveUsername +" 👋";
 }
 
 const saveUsername = localStorage.getItem(USERNAME_KEY);
